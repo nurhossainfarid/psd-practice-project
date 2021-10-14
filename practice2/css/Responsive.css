@@ -1,0 +1,377 @@
+
+    /*		Default Layout: 992px. 
+            Gutters: 24px.
+            Outer margins: 48px.
+            Leftover space for scrollbars @1024px: 32px.
+     */
+
+.wrapper{
+	width:960px;
+	display:block;
+	margin:0 auto;
+}
+img {
+    max-width: 100%;
+}
+.selectnav {
+    display: none;
+}
+.selectnav:hover {
+    background-color: #b3b3bd
+}
+
+   	/*	    Tablet Layout: 768px.
+            Gutters: 24px.
+            Outer margins: 28px.
+            Inherits styles from: Default Layout.
+    -----------------------------------------------------------------
+    cols    1     2      3      4      5      6      7      8
+    px      68    160    252    344    436    528    620    712    */
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+     .wrapper {
+        width: 95%;
+     }
+     .content_top {
+        width: 100%; 
+     }  
+     .single_course {
+         width: 22%;
+         margin-right: 4%;
+     } 
+     .single_course:first-child {
+         margin-left: 0%;
+     } 
+     .single_course:last-child {
+         margin-right: 0%;
+     } 
+     .content_bottom {
+         width: 100%;
+     }
+     .content_left {
+         width: 45%;
+     }
+     .content_right {
+         width: 45%;
+     }
+     .content_right .image_style {
+        width: 85%;
+        height: 100%;
+        margin-left: 5px;
+        margin-top: 7px;
+        margin-bottom: 3px;
+     }
+     .content_right ul li {
+        width: 21%;
+        height: 21%;
+        margin: 0px;
+        margin-right: 4%;
+     }
+     .footer_top {
+         width: 100%;
+     }
+     .footer_top .footer_left {
+         width: 30%;
+     }
+     .footer_top .footer_middle {
+         width: 20%;
+     }
+     .footer_top .footer_right {
+         width: 30%;
+     }
+     .footer_bottom  {
+         width: 100%;
+     }
+     .footer_left {
+         width: 40%;
+     }
+     .footer_right {
+         width: 50%;
+     }
+     .footer_bottom ul {
+        margin-right: 30%;
+     }
+     .footer_bottom ul li {
+        margin-left: -2%;
+        width: 15%;
+    }
+
+
+     
+    }
+    /*		Wide Mobile Layout: 480px.
+    Gutters: 24px.
+    Outer margins: 22px.
+    Inherits styles from: Default Layout, Mobile Layout.
+    ------------------------------------------------------------
+    cols    1     2      3      4      5
+    px      68    160    252    344    436    */
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .wrapper {
+            width: 95%;
+         }
+         .content_top {
+            width: 100%; 
+         }  
+         .single_course {
+             width: 45%;
+             margin-right: 5%;
+         } 
+         .single_course:nth-child(2) {
+             width: 50%;
+             margin-right: 0%;
+         } 
+         .single_course:nth-child(3) {
+             margin-top: 30px;
+         } 
+         .single_course:nth-child(4) {
+             margin-top: 30px;
+             margin-right: 0%;
+         } 
+         .single_course:nth-child(4) a img  {
+             margin-top: 0px;
+         } 
+         .single_course:first-child {
+             margin-left: 0%;
+         } 
+         .content_bottom {
+             width: 100%;
+         }
+         .content_left {
+             width: 45%;
+         }
+         .content_right {
+             width: 45%;
+         }
+         .content_right .image_style {
+            width: 85%;
+            height: 100%;
+            margin-left: 5px;
+            margin-top: 7px;
+            margin-bottom: 3px;
+         }
+         .content_right ul li {
+            width: 21%;
+            height: 21%;
+            margin: 0px;
+            margin-right: 4%;
+         }
+         .footer_top {
+             width: 100%;
+         }
+         .footer_top .footer_left {
+             width: 30%;
+         }
+         .footer_top .footer_middle {
+             width: 20%;
+         }
+         .footer_top .footer_right {
+             width: 30%;
+         }
+         .footer_bottom  {
+             width: 100%;
+         }
+         .footer_left {
+             width: 50%;
+         }
+         .footer_right {
+             width: 40%;
+         }
+         .footer_bottom ul {
+            margin-right: 30%;
+         }
+         .footer_bottom ul li {
+            margin-left: 1%;
+            width: 15%;
+         }
+         .selectnav {
+            display: block; 
+            width: 100%;
+            float: left;
+            height: 35px;
+            font-size: 25px;
+            overflow: hidden;
+            color: #1B53F3;
+            background: #FFF;
+            border: none;
+         }
+         .selectnav:hover {
+            color: #fff;
+            background: #515151;
+         }
+         #header .main_menu { 
+            box-shadow: 0px 0px 0px;
+            border-radius: 5px;
+            margin-top: 35px;
+         }
+         #menu {
+            display: none;
+         }
+        #slider_wrapper {
+            display: none;
+        }
+          
+        
+    }
+    /*		Mobile Layout: 320px.
+            Gutters: 24px.
+            Outer margins: 34px.
+            Inherits styles from: Default Layout.
+    ---------------------------------------------
+    cols    1     2      3
+    px      68    160    252    */
+    @media only screen and (max-width: 480px) {
+        .wrapper {
+            width: 95%;
+         }
+         .content_top {
+            width: 100%; 
+         }  
+         .single_course {
+             width: 100%;  
+             margin-right: 0%;
+         } 
+         .single_course:nth-child(2) {
+             width: 100%;
+             margin-top: 30px;
+         } 
+         .single_course:nth-child(3) {
+             margin-top: 30px;
+         } 
+         .single_course:nth-child(4) {
+             margin-top: 30px;
+         } 
+         .single_course:nth-child(4) a img  {
+             margin-top: 0px;
+         } 
+         .single_course:first-child {
+             margin-left: 0%;
+         } 
+         .content_bottom {
+             width: 100%;
+         }
+         .content_left {
+             width: 100%;
+         }
+         .content_right {
+             width: 100%;
+             margin-bottom: 30px;
+         }
+         .content_right .image_style {
+            width: 85%;
+            height: 100%;
+            margin-left: 7px;
+            margin-top: 7px;
+            margin-bottom: 4px;
+         }
+         .content_right ul li {
+            width: 21%;
+            height: 21%;
+            margin: 0px;
+            margin-right: 4%;
+         }
+         .footer_top {
+             width: 100%;
+         }
+         .footer_top .footer_left {
+             width: 100%;
+         }
+         .footer_top .footer_middle {
+             width: 100%;
+             margin-top: 20px;
+         }
+         .footer_top .footer_right {
+             width: 100%;
+             margin-top: 20px;
+         }
+         .footer_bottom  {
+             width: 100%;
+         }
+         .footer_left {
+             width: 50%;
+         }
+         .footer_right {
+             width: 40%;
+         }
+         .footer_bottom ul {
+            margin-right: 0%;
+         }
+         .footer_bottom ul li {
+            margin-left: 1%;
+            width: 15%;
+         }
+         .selectnav {
+            display: block; 
+            width: 100%;
+            float: left;
+            height: 35px;
+            font-size: 25px;
+            overflow: hidden;
+            color: #1B53F3;
+            background: #FFF;
+            border: none;
+         }
+         .selectnav:hover {
+            color: #fff;
+            background: #515151;
+         }
+         #header .main_menu { 
+            box-shadow: 0px 0px 0px;
+            border-radius: 5px;
+            margin-top: 80px;
+            margin-left: 0px;
+            left: 0px;
+            position: absolute;
+            width: 100%;
+         }
+         #menu {
+            display: none;
+         }
+        #slider_wrapper {
+            display: none;
+        }
+          
+        
+    }
+    
+    
+    /*	Retina media query.
+    Overrides styles for devices with a 
+        device-pixel-ratio of 2+, such as iPhone 4.
+    -----------------------------------------------    */
+    @media 
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-device-pixel-ratio: 2) {
+        
+            .wrapper {
+                width: 97%;
+             }
+             #content {
+                width:100%; 
+             }   
+             #sidebar {
+                width: 100%;
+           
+             }
+            #slider_wrapper {
+                display: none;
+            }
+            #social_share {
+                display: none;
+            }
+            #main_article_single
+            {
+                margin-bottom:25px;
+                border-bottom:2px solid #e09752;
+                overflow:hidden;
+            }
+            .selectnav {
+                display: block; 
+                width: 100%;
+                height: 100%; 
+            }
+            #mainmenu {
+                display: none;
+            }
+        
+        
+    }

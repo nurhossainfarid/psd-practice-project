@@ -1,0 +1,236 @@
+
+    /*		Default Layout: 992px. 
+            Gutters: 24px.
+            Outer margins: 48px.
+            Leftover space for scrollbars @1024px: 32px.
+     */
+
+.wrapper{
+	width:960px;
+	display:block;
+	margin:0 auto;
+	border-right:2px solid #6B710E;
+	border-left:2px solid #6B710E;
+}
+img {
+    max-width: 100%;
+}
+.selectnav {
+    display: none;
+    border: none;
+}
+.selectnav:hover {
+    background-color: #b3bdbb;
+    border: none;
+}
+
+   	/*	    Tablet Layout: 768px.
+            Gutters: 24px.
+            Outer margins: 28px.
+            Inherits styles from: Default Layout.
+    -----------------------------------------------------------------
+    cols    1     2      3      4      5      6      7      8
+    px      68    160    252    344    436    528    620    712    */
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+     .wrapper {
+        width: 95%;
+     }
+     .content_wrapper {
+         width: 100%;
+     }
+     .content_wrapper .left_content {
+        width: 65%; 
+
+     }   
+     #aside_wrapper {
+        width: 30%;
+     }
+
+     
+    }
+    /*		Wide Mobile Layout: 480px.
+    Gutters: 24px.
+    Outer margins: 22px.
+    Inherits styles from: Default Layout, Mobile Layout.
+    ------------------------------------------------------------
+    cols    1     2      3      4      5
+    px      68    160    252    344    436    */
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .wrapper {
+            width: 97%;
+        }
+        .content_wrapper {
+            width: 100%;
+        }
+        .content_wrapper .left_content {
+           width: 100%; 
+        }   
+        #aside_wrapper {
+           width: 96%;
+           float: left;
+           margin-left: 2%;
+           margin-right: 2%;
+           margin-bottom: 50px;
+        }
+        .aside_sub_wrp {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .single_sub_sidebar {
+            width: 50%;
+        }
+        .single_sidebar h2 {
+            width: 95.5%;
+        }
+        .single_sidebar input[type="text"] {
+            width: 100%;
+        }
+        .single_sidebar input[type="email"] {
+            width: 100%;
+        }
+        .selectnav {
+            display: block; 
+            width: 100%;
+            height: 100%; 
+            float: left;
+            margin-top: 30px;
+            height: 40px;
+            font-size: 30px;
+            overflow: hidden;
+            color: #58C93A;
+        }
+        .selectnav:hover {
+            color: #fa5818;
+        }
+        #menu {
+            display: none;
+        }
+            
+               
+        }
+        /*		Mobile Layout: 320px.
+                Gutters: 24px.
+                Outer margins: 34px.
+                Inherits styles from: Default Layout.
+        ---------------------------------------------
+        cols    1     2      3
+        px      68    160    252    */
+        @media only screen and (max-width: 480px) {
+            .wrapper {
+                width: 97%;
+                border-right: none;
+                border-left: none;
+             }
+             .content_wrapper {
+                width: 100%;
+                border-left: none;
+                border-right: none;
+            }
+            .content_wrapper .left_content {
+               width: 100%; 
+            }   
+            #aside_wrapper {
+                width: 94%;
+                float: left;
+                margin-left: 2%;
+                margin-right: 2%;
+                margin-bottom: 50px;
+             }
+            .single_sidebar h2 {
+                width: 96.5%;
+            }
+            .single_sidebar input[type="text"], .single_sidebar input[type="email"] {
+                width: 99.5%;
+            }
+            .selectnav {
+                display: block; 
+                width: 100%;
+                height: 100%; 
+                float: left;
+                height: 40px;
+                font-size: 30px;
+                overflow: hidden;
+                color: #58C93A;
+                background: #efebeb;
+             }
+             .nav {
+                 float: none;
+             }
+             .selectnav:hover {
+                color: #fa5818;
+             }
+             #menu {
+                display: none;
+             }
+            
+        }
+        
+        
+        /*	Retina media query.
+        Overrides styles for devices with a 
+        device-pixel-ratio of 2+, such as iPhone 4.
+    -----------------------------------------------    */
+    @media 
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-device-pixel-ratio: 2) {
+    
+            .wrapper {
+                width: 97%;
+                border-right: none;
+                border-left: none;
+            }
+            .content_wrapper {
+                width: 100%;
+                border-left: none;
+                border-right: none;
+            }
+            .content_wrapper .left_content {
+               width: 100%; 
+            }   
+            #aside_wrapper {
+               width: 96%;
+               float: left;
+               margin-left: 2%;
+               margin-right: 2%;
+               margin-bottom: 50px;
+            }
+            .aside_sub_wrp {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .single_sub_sidebar {
+                width: 50%;
+            }
+            .single_sidebar h2 {
+                width: 95.5%;
+            }
+            .single_sidebar input[type="text"] {
+                width: 100%;
+            }
+            .single_sidebar input[type="email"] {
+                width: 100%;
+            }
+            .selectnav {
+                display: block; 
+                width: 100%;
+                height: 100%; 
+                float: left;
+                margin-top: 30px;
+                height: 40px;
+                font-size: 30px;
+                overflow: hidden;
+                color: #58C93A;
+            }
+            .selectnav:hover {
+                color: #fa5818;
+            }
+            #menu {
+                display: none;
+            }
+                
+                   
+        }    
